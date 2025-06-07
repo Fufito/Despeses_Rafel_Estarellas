@@ -11,15 +11,13 @@ function App() {
   const { user } = useAuth();
 
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Projects />} />
-        <Route path="/projecte/:id" element={<ProjectDetail />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-      </Routes>
-    </Router>
+    <><Navbar /><Routes>
+      <Route path="/" element={<Projects />} />
+      <Route path="/projecte/:id" element={<ProjectDetail />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+    </Routes></>
+    
   );
 }
 
